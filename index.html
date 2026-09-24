@@ -1,142 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MoneyMate — a simple personal money management dashboard.">
-  <title>MoneyMate — Make money easier to manage</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="nav">
-    <a class="brand" href="#top" aria-label="MoneyMate home"><span class="brand-dot"></span>MoneyMate</a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#features">Features</a>
-      <a href="#how">How it works</a>
-      <a href="#dashboard">Dashboard</a>
-    </nav>
-    <div class="nav-actions">
-      <button class="text-btn" id="loginBtn">Log in</button>
-      <button class="btn btn-dark" data-scroll="#dashboard">Try it free</button>
-    </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow"><span>●</span> Your money, made simple</div>
-        <h1>Feel in control of your <em>money.</em></h1>
-        <p>Track spending, plan your month, build savings goals, and understand your finances without complicated spreadsheets.</p>
-        <div class="hero-actions">
-          <button class="btn btn-dark btn-large" data-scroll="#dashboard">Build my plan <span>→</span></button>
-          <button class="play-btn" data-scroll="#how"><span>▶</span> See how it works</button>
-        </div>
-        <div class="trust"><span class="avatars"><i></i><i></i><i></i></span><span>Designed for everyday money decisions</span></div>
-      </div>
-      <div class="hero-visual">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="phone">
-          <div class="phone-top"><span>MoneyMate</span><span>•••</span></div>
-          <div class="balance-label">Available this month</div>
-          <div class="balance">₹24,680</div>
-          <div class="mini-progress"><span></span></div>
-          <div class="phone-row"><span>Spent</span><b>₹15,320</b></div>
-          <div class="phone-row"><span>Saved</span><b>₹6,000</b></div>
-          <div class="chart">
-            <div style="height:34%"></div><div style="height:52%"></div><div style="height:42%"></div><div style="height:70%"></div><div style="height:58%"></div><div style="height:84%"></div><div style="height:66%"></div>
-          </div>
-          <div class="phone-card"><span>🎯 Laptop goal</span><b>40%</b></div>
-        </div>
-        <div class="floating-card spend-card"><span>Monthly spending</span><strong>₹15,320</strong><small>↓ 8% vs last month</small></div>
-        <div class="floating-card goal-card"><span>Goal progress</span><strong>₹24,000</strong><small>of ₹60,000</small></div>
-      </div>
-    </section>
-
-    <section class="strip">
-      <span>ONE PLACE FOR YOUR EVERYDAY MONEY</span>
-      <div><b>Track</b><b>Plan</b><b>Save</b><b>Understand</b></div>
-    </section>
-
-    <section class="section" id="features">
-      <div class="section-head">
-        <div><div class="eyebrow">WHY MONEY MATE</div><h2>Less guessing.<br><em>More knowing.</em></h2></div>
-        <p>Your finances do not need to feel like a second job. MoneyMate turns everyday numbers into clear actions.</p>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card feature-wide">
-          <div class="icon">↗</div><h3>Know where your money goes</h3><p>See your spending by category and spot patterns before they become problems.</p>
-          <div class="bars"><span style="width:78%"></span><span style="width:54%"></span><span style="width:35%"></span><span style="width:62%"></span></div>
-          <div class="bar-labels"><span>Needs</span><span>Food</span><span>Fun</span><span>Travel</span></div>
-        </article>
-        <article class="feature-card">
-          <div class="icon green">◎</div><h3>Set goals that feel real</h3><p>Turn a big target into a simple monthly saving plan.</p><div class="ring"><span>40%</span></div>
-        </article>
-        <article class="feature-card">
-          <div class="icon yellow">✓</div><h3>Stay ahead of bills</h3><p>Keep recurring expenses visible so due dates don't surprise you.</p>
-          <ul class="bill-list"><li><span>Rent</span><b>₹12,000</b></li><li><span>Internet</span><b>₹799</b></li><li><span>EMI</span><b>₹3,500</b></li></ul>
-        </article>
-        <article class="feature-card feature-wide assistant-card">
-          <div class="icon purple">✦</div><h3>Ask your money questions</h3><p>Use a simple assistant for calculations and planning ideas based on the numbers you enter.</p>
-          <div class="chat"><span>Can I spend ₹3,000 this week?</span><b>Based on your plan, you have ₹4,250 of flexible spending left.</b></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="how section" id="how">
-      <div class="how-intro">
-        <div class="eyebrow">HOW IT WORKS</div><h2>Three steps to a clearer month.</h2>
-        <p>No finance jargon. Just useful information at the moment you need it.</p>
-      </div>
-      <div class="steps">
-        <div class="step"><span>01</span><h3>Add your numbers</h3><p>Enter income, regular bills and a few spending details.</p></div>
-        <div class="step active"><span>02</span><h3>See your plan</h3><p>Get a simple picture of what is available, committed and left to save.</p></div>
-        <div class="step"><span>03</span><h3>Make better decisions</h3><p>Use goals, reminders and insights to stay on track.</p></div>
-      </div>
-    </section>
-
-    <section class="dashboard-section section" id="dashboard">
-      <div class="dashboard-head">
-        <div><div class="eyebrow">LIVE DEMO</div><h2>Your money at a glance.</h2></div>
-        <button class="btn btn-light" id="resetBtn">Reset demo</button>
-      </div>
-      <div class="dashboard">
-        <aside class="side">
-          <div class="side-brand">MoneyMate</div>
-          <button class="side-link active">Overview</button><button class="side-link">Budget</button><button class="side-link">Goals</button><button class="side-link">Bills</button>
-          <div class="side-bottom">Good money habits start small.</div>
-        </aside>
-        <div class="dash-main">
-          <div class="dash-top"><div><span>Good morning 👋</span><h3>Here's your month.</h3></div><button class="avatar">MM</button></div>
-          <div class="metric-grid">
-            <div class="metric"><span>Income</span><b id="incomeView">₹30,000</b><small>This month</small></div>
-            <div class="metric"><span>Spent</span><b id="spentView">₹15,320</b><small>51% of income</small></div>
-            <div class="metric"><span>Saved</span><b id="savedView">₹6,000</b><small>20% of income</small></div>
-            <div class="metric highlight"><span>Flexible left</span><b id="leftView">₹8,680</b><small>Until month end</small></div>
-          </div>
-          <div class="dash-columns">
-            <div class="panel"><div class="panel-title"><b>Spending breakdown</b><span>This month</span></div><div class="donut"><div><b>₹15.3k</b><small>spent</small></div></div><div class="legend"><span>Needs <b>₹7,800</b></span><span>Lifestyle <b>₹4,520</b></span><span>Other <b>₹3,000</b></span></div></div>
-            <div class="panel"><div class="panel-title"><b>Quick budget</b><span id="budgetStatus">Healthy</span></div><label>Monthly income <input id="incomeInput" type="number" value="30000" min="0"></label><label>Planned spending <input id="spendInput" type="number" value="15320" min="0"></label><label>Savings goal <input id="saveInput" type="number" value="6000" min="0"></label><button class="btn btn-dark full" id="calculateBtn">Update my plan</button></div>
-          </div>
-          <div class="insight"><span>✦</span><div><b>MoneyMate insight</b><p id="insightText">You have ₹8,680 of flexible money left after your planned spending and savings.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta section">
-      <div><div class="eyebrow">START SIMPLE</div><h2>Money clarity should be for everyone.</h2><p>Build your first monthly plan in a few minutes.</p></div>
-      <button class="btn btn-dark btn-large" data-scroll="#dashboard">Create my plan <span>→</span></button>
-    </section>
-  </main>
-
-  <footer><div class="brand"><span class="brand-dot"></span>MoneyMate</div><p>Simple tools for better everyday money decisions.</p><span>© 2026 MoneyMate</span></footer>
-  <div class="toast" id="toast" role="status"></div>
-  <script src="script.js"></script>
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MoneyMate — a simple personal money management dashboard.">
   <title>MoneyMate — Make money easier to manage</title>
-  
-  <!-- Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  
+
   <style>
     :root {
       --color-brand-primary: #232425;
@@ -167,169 +27,457 @@
       --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
     }
 
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       padding: 0;
       background: var(--color-bg-page);
       color: var(--color-text-primary);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', system-ui, sans-serif;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
 
-    /* Header */
-    .nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 7%; border-bottom: 1px solid var(--color-border-default); }
-    .brand { font-weight: 800; font-size: 20px; text-decoration: none; color: inherit; display: flex; align-items: center; gap: 8px; }
-    .brand-dot { width: 10px; height: 10px; background: var(--color-brand-secondary); border-radius: 50%; }
-    .nav-links { display: flex; gap: 24px; }
-    .nav-links a { text-decoration: none; color: var(--color-text-secondary); font-weight: 500; font-size: 14px; }
-    .nav-actions { display: flex; gap: 16px; align-items: center; }
-    .text-btn { background: none; border: none; font-weight: 600; cursor: pointer; color: var(--color-text-primary); }
-    .btn-dark { background: var(--color-brand-primary); color: #fff; border: none; padding: 10px 20px; border-radius: 999px; font-weight: 600; cursor: pointer; }
+    button, input { font: inherit; }
 
-    /* Layout */
-    .wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-    .hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 16px; margin-bottom: 24px; }
-    .card { background: var(--color-bg-surface); border: 1px solid var(--color-border-default); border-radius: var(--radius-12); box-shadow: var(--shadow-sm); }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+      border-bottom: 1px solid var(--color-border-default);
+      background: rgba(255,255,255,.96);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      background: var(--color-brand-secondary);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--color-text-secondary);
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--color-brand-secondary); }
+
+    .nav-actions { display: flex; gap: 16px; align-items: center; }
+
+    .text-btn {
+      background: none;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--color-text-primary);
+    }
+
+    .btn-dark, .btn {
+      background: var(--color-brand-primary);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover, .btn-dark:hover { opacity: .88; }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--color-bg-surface);
+      border: 1px solid var(--color-border-default);
+      border-radius: var(--radius-12);
+      box-shadow: var(--shadow-sm);
+    }
+
     .pad { padding: 24px; }
-    .eyebrow { font-size: 12px; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 8px; font-weight: 600; letter-spacing: 0.05em; }
-    .title { font-size: 32px; font-weight: 700; margin: 0 0 12px 0; line-height: 1.2; }
-    .sub { font-size: 16px; color: var(--color-text-secondary); line-height: 1.5; }
-    
-    .btn { display: inline-block; margin-top: 16px; padding: 12px 20px; border-radius: 999px; background: var(--color-brand-primary); color: #fff; font-size: 14px; font-weight: 600; text-decoration: none; text-align: center; cursor: pointer; }
-    .ghost { display: inline-block; margin-top: 16px; margin-left: 12px; padding: 12px 20px; border-radius: 999px; border: 1px solid var(--color-border-default); font-size: 14px; font-weight: 600; color: var(--color-text-primary); text-decoration: none; }
-    
+
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+      margin-bottom: 8px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .title {
+      font-family: 'Manrope', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+
+    .sub {
+      font-size: 16px;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    .btn { margin-top: 16px; font-size: 14px; text-align: center; }
+    .ghost {
+      display: inline-block;
+      margin-top: 16px;
+      margin-left: 12px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--color-border-default);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .ghost:hover { border-color: var(--color-border-strong); }
+
     .list { display: grid; gap: 12px; margin-top: 16px; }
-    .bullet { display: flex; gap: 12px; }
-    .num { width: 24px; height: 24px; background: var(--color-brand-secondary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
-    
-    /* Wireframe Content */
+
+    .bullet { display: flex; gap: 12px; line-height: 1.4; }
+
+    .num {
+      width: 24px;
+      height: 24px;
+      background: var(--color-brand-secondary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
     .wire { display: flex; flex-direction: column; gap: 16px; }
-    .sec { border: 1px dashed var(--color-border-strong); border-radius: var(--radius-12); padding: 16px; background: #fff; }
-    .sec h4 { margin: 0 0 8px 0; font-size: 18px; }
-    .sec p { margin: 0 0 12px 0; color: var(--color-text-secondary); font-size: 14px; }
-    
+
+    .sec {
+      border: 1px dashed var(--color-border-strong);
+      border-radius: var(--radius-12);
+      padding: 16px;
+      background: #fff;
+    }
+
+    .sec h4 { margin: 0 0 8px; font-size: 18px; }
+    .sec p { margin: 0 0 12px; color: var(--color-text-secondary); font-size: 14px; }
+
     .row2, .row3, .row4 { display: grid; gap: 10px; }
     .row2 { grid-template-columns: 1fr 1fr; }
     .row3 { grid-template-columns: repeat(3, 1fr); }
     .row4 { grid-template-columns: repeat(4, 1fr); }
-    
-    .mini { border: 1px solid var(--color-border-subtle); border-radius: 8px; padding: 12px; background: var(--color-bg-subtle); font-size: 13px; color: var(--color-text-secondary); }
-    .kpi { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
 
-    /* Footer */
-    footer { border-top: 1px solid var(--color-border-default); background: var(--color-bg-surface); padding: 40px 0; }
-    .footer { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-    .ctaBox { background: #fff; border: 1px solid var(--color-border-default); padding: 24px; border-radius: var(--radius-12); }
-    .note { font-size: 12px; color: var(--color-text-tertiary); margin-top: 12px; }
+    .mini {
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 8px;
+      padding: 12px;
+      background: var(--color-bg-subtle);
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      line-height: 1.45;
+    }
+
+    .kpi {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .demo {
+      background: #f8fbff;
+      border: 1px solid #dcecff;
+    }
+
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--color-text-secondary);
+    }
+
+    .field input {
+      width: 100%;
+      padding: 11px 12px;
+      border: 1px solid var(--color-border-default);
+      border-radius: 8px;
+      background: #fff;
+      outline: none;
+    }
+
+    .field input:focus { border-color: var(--color-brand-secondary); }
+
+    .calc-result {
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid var(--color-border-default);
+      font-weight: 600;
+    }
+
+    .hidden { display: none !important; }
+
+    footer {
+      border-top: 1px solid var(--color-border-default);
+      background: var(--color-bg-surface);
+      padding: 40px 0;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .ctaBox {
+      background: #fff;
+      border: 1px solid var(--color-border-default);
+      padding: 24px;
+      border-radius: var(--radius-12);
+    }
+
+    .note {
+      font-size: 12px;
+      color: var(--color-text-tertiary);
+      margin-top: 12px;
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 100;
+    }
+
+    .modal-box {
+      width: min(440px, 100%);
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.18);
+    }
+
+    .modal-box h3 { margin: 0 0 8px; }
+    .modal-box p { color: var(--color-text-secondary); line-height: 1.5; }
+    .close {
+      float: right;
+      border: none;
+      background: transparent;
+      font-size: 22px;
+      cursor: pointer;
+    }
 
     @media (max-width: 768px) {
-      .hero, .footer, .row2, .row3, .row4, .kpi { grid-template-columns: 1fr; }
+      .nav { padding: 16px 20px; }
       .nav-links { display: none; }
+      .nav-actions { gap: 8px; }
+      .hero, .footer, .row2, .row3, .row4, .kpi, .calculator {
+        grid-template-columns: 1fr;
+      }
+      .wrap { padding: 28px 16px; }
+      .title { font-size: 28px; }
+      .ghost { margin-left: 0; }
     }
   </style>
 </head>
+
 <body>
   <header class="nav">
-    <a class="brand" href="#top" aria-label="MoneyMate home"><span class="brand-dot"></span>MoneyMate</a>
+    <a class="brand" href="#top" aria-label="MoneyMate home">
+      <span class="brand-dot"></span>MoneyMate
+    </a>
+
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
       <a href="#dashboard">Dashboard</a>
     </nav>
+
     <div class="nav-actions">
-      <button class="text-btn">Log in</button>
-      <button class="btn btn-dark">Start Free</button>
+      <button class="text-btn" onclick="openModal('login')">Log in</button>
+      <button class="btn-dark" onclick="openModal('start')">Start Free</button>
     </div>
   </header>
 
   <main id="top">
     <div class="wrap">
-      <div class="hero">
+
+      <section class="hero">
         <div class="card pad">
-          <div class="eyebrow">Redesigned landing flow</div>
-          <h2 class="title">MoneyMate homepage wireframe</h2>
-          <div class="sub">A cleaner conversion path for a personal finance product: clearer promise, visible trust, earlier proof, and fewer scroll-heavy sections.</div>
-          <span class="btn">Rewrite hero copy</span>
-          <span class="ghost">Mobile-first copy</span>
+          <div class="eyebrow">Simple personal finance</div>
+          <h1 class="title">Make your money easier to manage.</h1>
+          <div class="sub">
+            MoneyMate helps you understand your spending, plan your month,
+            and stay focused on your savings goals without complicated spreadsheets.
+          </div>
+
+          <a class="btn" href="#dashboard">Build my plan</a>
+          <a class="ghost" href="#how">See how it works</a>
         </div>
+
         <div class="card pad">
-          <div class="eyebrow">Core goals</div>
+          <div class="eyebrow">Why MoneyMate</div>
           <div class="list">
-            <div class="bullet"><span class="num">1</span><div><b>Trust first</b><br>Show privacy and safety before asking for financial input.</div></div>
-            <div class="bullet"><span class="num">2</span><div><b>One CTA</b><br>Use one consistent action across the page.</div></div>
-            <div class="bullet"><span class="num">3</span><div><b>Proof early</b><br>Move useful demo signals higher on the page.</div></div>
+            <div class="bullet">
+              <span class="num">1</span>
+              <div><b>Know where money goes</b><br>See your spending clearly.</div>
+            </div>
+            <div class="bullet">
+              <span class="num">2</span>
+              <div><b>Plan your month</b><br>Know what you can safely spend.</div>
+            </div>
+            <div class="bullet">
+              <span class="num">3</span>
+              <div><b>Build savings</b><br>Turn goals into a simple plan.</div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="card pad wire">
-        <div class="eyebrow">Desktop wireframe</div>
+      <section class="card pad wire" id="features">
+
+        <div class="eyebrow">MoneyMate features</div>
 
         <div class="sec">
           <h4>1. Header</h4>
-          <p>Logo • Features • How it works • Security • Pricing/FAQ • Log in • Primary CTA</p>
+          <p>Everything important is available from the top navigation.</p>
           <div class="row4">
-            <div class="mini">Logo</div><div class="mini">Nav links</div><div class="mini">Log in</div><div class="mini">Start free</div>
+            <div class="mini">MoneyMate</div>
+            <div class="mini">Features</div>
+            <div class="mini">Dashboard</div>
+            <div class="mini">Start free</div>
           </div>
         </div>
 
         <div class="sec">
-          <h4>2. Hero + proof</h4>
-          <p>Headline, subheadline, one primary CTA, one secondary CTA, then trust chips and a live product preview.</p>
+          <h4>2. Your monthly plan</h4>
+          <p>Get a quick picture of income, spending, savings and money left.</p>
           <div class="row2">
-            <div class="mini"><b>Headline</b><br>Know what you can spend, save, and keep this month.</div>
-            <div class="mini"><b>Product preview</b><br>Dashboard card with monthly plan, safe-to-spend amount, and savings goal.</div>
+            <div class="mini">
+              <b>Monthly plan</b><br>
+              Income: ₹30,000<br>
+              Spending: ₹15,320<br>
+              Savings: ₹6,000
+            </div>
+            <div class="mini">
+              <b>Flexible money</b><br>
+              ₹8,680 available after planned spending and savings.
+            </div>
           </div>
+
           <div class="kpi">
-            <div class="mini">Private by design</div>
-            <div class="mini">No bank login required</div>
-            <div class="mini">Set up in 2 minutes</div>
+            <div class="mini"><b>Private by design</b><br>Your information stays focused on your money plan.</div>
+            <div class="mini"><b>Simple setup</b><br>Start with a few numbers.</div>
+            <div class="mini"><b>Clear decisions</b><br>Know what is available before spending.</div>
           </div>
         </div>
 
         <div class="sec">
-          <h4>3. Social proof / credibility</h4>
-          <p>Add testimonials, user count, rating, or short outcomes.</p>
+          <h4>3. Why switch from spreadsheets</h4>
+          <p>A simpler way to understand everyday money decisions.</p>
           <div class="row3">
-            <div class="mini">Testimonial 1</div>
-            <div class="mini">Usage stat</div>
-            <div class="mini">Testimonial 2</div>
+            <div class="mini"><b>See spending clearly</b><br>Understand where your money goes.</div>
+            <div class="mini"><b>Plan savings faster</b><br>Set a target and track progress.</div>
+            <div class="mini"><b>Avoid surprises</b><br>Keep upcoming expenses in view.</div>
           </div>
         </div>
 
-        <div class="sec">
-          <h4>4. Why switch from spreadsheets</h4>
-          <p>Directly answer the alternative the user already uses.</p>
+        <div class="sec" id="how">
+          <h4>4. How it works</h4>
+          <p>Keep your money management simple: enter numbers → see your plan → act.</p>
           <div class="row3">
-            <div class="mini">See spending clearly</div>
-            <div class="mini">Plan savings faster</div>
-            <div class="mini">Avoid bill surprises</div>
+            <div class="mini"><b>1. Add income & bills</b><br>Enter your monthly numbers.</div>
+            <div class="mini"><b>2. Get your plan</b><br>See spending, savings and flexible money.</div>
+            <div class="mini"><b>3. Make decisions</b><br>Use your plan before you spend.</div>
+          </div>
+        </div>
+
+        <div class="sec demo" id="dashboard">
+          <h4>5. Interactive budget demo</h4>
+          <p>Enter your numbers and MoneyMate calculates your remaining flexible money.</p>
+
+          <div class="calculator">
+            <div class="field">
+              <label for="income">Monthly income (₹)</label>
+              <input id="income" type="number" min="0" value="30000">
+            </div>
+
+            <div class="field">
+              <label for="spending">Planned spending (₹)</label>
+              <input id="spending" type="number" min="0" value="15320">
+            </div>
+
+            <div class="field">
+              <label for="savings">Savings goal (₹)</label>
+              <input id="savings" type="number" min="0" value="6000">
+            </div>
+          </div>
+
+          <button class="btn" type="button" onclick="updatePlan()">Update my plan</button>
+
+          <div class="calc-result" id="result">
+            You have ₹8,680 of flexible money left after your planned spending and savings.
           </div>
         </div>
 
         <div class="sec">
-          <h4>5. How it works</h4>
-          <p>Keep this compact: enter numbers → see plan → act with confidence.</p>
-          <div class="row3">
-            <div class="mini">Add income & bills</div>
-            <div class="mini">Get your monthly plan</div>
-            <div class="mini">Track flexible money</div>
-          </div>
-        </div>
-
-        <div class="sec">
-          <h4>6. Interactive demo</h4>
-          <p>Show one short scenario focused on one outcome.</p>
+          <h4>6. FAQ + security</h4>
+          <p>MoneyMate is designed to keep money management understandable and focused on everyday planning.</p>
           <div class="row2">
-            <div class="mini">Mini calculator</div>
-            <div class="mini">Output insight</div>
+            <div class="mini"><b>Do I need to connect my bank?</b><br>No. This demo works with numbers you enter yourself.</div>
+            <div class="mini"><b>Is MoneyMate free?</b><br>The current website demonstrates a free starting experience.</div>
           </div>
         </div>
 
-        <div class="sec">
-          <h4>7. FAQ + security</h4>
-          <p>Answer common objections about privacy and cost.</p>
-        </div>
-      </div>
+      </section>
     </div>
   </main>
 
@@ -338,15 +486,77 @@
       <div class="footer">
         <div class="ctaBox">
           <h4>Ready to start?</h4>
-          <p class="sub">Join 10,000+ users managing their money better.</p>
-          <span class="btn">Get started for free</span>
+          <p class="sub">Build a simple monthly money plan in a few minutes.</p>
+          <button class="btn" onclick="openModal('start')">Get started for free</button>
         </div>
+
         <div>
-          <div class="brand"><span class="brand-dot"></span>MoneyMate</div>
-          <p class="note">© 2026 MoneyMate. Private and secure personal finance tracking.</p>
+          <div class="brand">
+            <span class="brand-dot"></span>MoneyMate
+          </div>
+          <p class="note">© 2026 MoneyMate. Simple personal money management.</p>
         </div>
       </div>
     </div>
   </footer>
+
+  <div class="modal hidden" id="modal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal()">×</button>
+      <h3 id="modalTitle">Welcome to MoneyMate</h3>
+      <p id="modalText">This is the starting interface. Account creation can be connected to a real authentication system later.</p>
+      <button class="btn" onclick="closeModal()">Continue</button>
+    </div>
+  </div>
+
+  <script>
+    function formatMoney(value) {
+      return new Intl.NumberFormat('en-IN').format(Math.max(0, Math.round(value)));
+    }
+
+    function updatePlan() {
+      const income = Number(document.getElementById('income').value) || 0;
+      const spending = Number(document.getElementById('spending').value) || 0;
+      const savings = Number(document.getElementById('savings').value) || 0;
+
+      const flexible = income - spending - savings;
+      const result = document.getElementById('result');
+
+      if (flexible >= 0) {
+        result.textContent =
+          'You have ₹' + formatMoney(flexible) +
+          ' of flexible money left after your planned spending and savings.';
+      } else {
+        result.textContent =
+          'Your current plan is ₹' + formatMoney(Math.abs(flexible)) +
+          ' over your monthly income. Try reducing spending or your savings target.';
+      }
+    }
+
+    function openModal(type) {
+      const modal = document.getElementById('modal');
+      const title = document.getElementById('modalTitle');
+      const text = document.getElementById('modalText');
+
+      if (type === 'login') {
+        title.textContent = 'Log in to MoneyMate';
+        text.textContent = 'Login functionality can be connected to your authentication provider when you are ready to add real user accounts.';
+      } else {
+        title.textContent = 'Start with MoneyMate';
+        text.textContent = 'Enter your monthly income, spending and savings target in the dashboard demo to create your first money plan.';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeModal(event) {
+      if (!event || event.target === document.getElementById('modal') || event.target.closest('.close')) {
+        document.getElementById('modal').classList.add('hidden');
+      }
+    }
+
+    updatePlan();
+  </script>
 </body>
 </html>
+

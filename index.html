@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MoneyMate — a simple personal money management dashboard.">
+  <title>MoneyMate — Make money easier to manage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="MoneyMate home"><span class="brand-dot"></span>MoneyMate</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#dashboard">Dashboard</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="text-btn" id="loginBtn">Log in</button>
+      <button class="btn btn-dark" data-scroll="#dashboard">Try it free</button>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>●</span> Your money, made simple</div>
+        <h1>Feel in control of your <em>money.</em></h1>
+        <p>Track spending, plan your month, build savings goals, and understand your finances without complicated spreadsheets.</p>
+        <div class="hero-actions">
+          <button class="btn btn-dark btn-large" data-scroll="#dashboard">Build my plan <span>→</span></button>
+          <button class="play-btn" data-scroll="#how"><span>▶</span> See how it works</button>
+        </div>
+        <div class="trust"><span class="avatars"><i></i><i></i><i></i></span><span>Designed for everyday money decisions</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="phone">
+          <div class="phone-top"><span>MoneyMate</span><span>•••</span></div>
+          <div class="balance-label">Available this month</div>
+          <div class="balance">₹24,680</div>
+          <div class="mini-progress"><span></span></div>
+          <div class="phone-row"><span>Spent</span><b>₹15,320</b></div>
+          <div class="phone-row"><span>Saved</span><b>₹6,000</b></div>
+          <div class="chart">
+            <div style="height:34%"></div><div style="height:52%"></div><div style="height:42%"></div><div style="height:70%"></div><div style="height:58%"></div><div style="height:84%"></div><div style="height:66%"></div>
+          </div>
+          <div class="phone-card"><span>🎯 Laptop goal</span><b>40%</b></div>
+        </div>
+        <div class="floating-card spend-card"><span>Monthly spending</span><strong>₹15,320</strong><small>↓ 8% vs last month</small></div>
+        <div class="floating-card goal-card"><span>Goal progress</span><strong>₹24,000</strong><small>of ₹60,000</small></div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <span>ONE PLACE FOR YOUR EVERYDAY MONEY</span>
+      <div><b>Track</b><b>Plan</b><b>Save</b><b>Understand</b></div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head">
+        <div><div class="eyebrow">WHY MONEY MATE</div><h2>Less guessing.<br><em>More knowing.</em></h2></div>
+        <p>Your finances do not need to feel like a second job. MoneyMate turns everyday numbers into clear actions.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-wide">
+          <div class="icon">↗</div><h3>Know where your money goes</h3><p>See your spending by category and spot patterns before they become problems.</p>
+          <div class="bars"><span style="width:78%"></span><span style="width:54%"></span><span style="width:35%"></span><span style="width:62%"></span></div>
+          <div class="bar-labels"><span>Needs</span><span>Food</span><span>Fun</span><span>Travel</span></div>
+        </article>
+        <article class="feature-card">
+          <div class="icon green">◎</div><h3>Set goals that feel real</h3><p>Turn a big target into a simple monthly saving plan.</p><div class="ring"><span>40%</span></div>
+        </article>
+        <article class="feature-card">
+          <div class="icon yellow">✓</div><h3>Stay ahead of bills</h3><p>Keep recurring expenses visible so due dates don't surprise you.</p>
+          <ul class="bill-list"><li><span>Rent</span><b>₹12,000</b></li><li><span>Internet</span><b>₹799</b></li><li><span>EMI</span><b>₹3,500</b></li></ul>
+        </article>
+        <article class="feature-card feature-wide assistant-card">
+          <div class="icon purple">✦</div><h3>Ask your money questions</h3><p>Use a simple assistant for calculations and planning ideas based on the numbers you enter.</p>
+          <div class="chat"><span>Can I spend ₹3,000 this week?</span><b>Based on your plan, you have ₹4,250 of flexible spending left.</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="how section" id="how">
+      <div class="how-intro">
+        <div class="eyebrow">HOW IT WORKS</div><h2>Three steps to a clearer month.</h2>
+        <p>No finance jargon. Just useful information at the moment you need it.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><h3>Add your numbers</h3><p>Enter income, regular bills and a few spending details.</p></div>
+        <div class="step active"><span>02</span><h3>See your plan</h3><p>Get a simple picture of what is available, committed and left to save.</p></div>
+        <div class="step"><span>03</span><h3>Make better decisions</h3><p>Use goals, reminders and insights to stay on track.</p></div>
+      </div>
+    </section>
+
+    <section class="dashboard-section section" id="dashboard">
+      <div class="dashboard-head">
+        <div><div class="eyebrow">LIVE DEMO</div><h2>Your money at a glance.</h2></div>
+        <button class="btn btn-light" id="resetBtn">Reset demo</button>
+      </div>
+      <div class="dashboard">
+        <aside class="side">
+          <div class="side-brand">MoneyMate</div>
+          <button class="side-link active">Overview</button><button class="side-link">Budget</button><button class="side-link">Goals</button><button class="side-link">Bills</button>
+          <div class="side-bottom">Good money habits start small.</div>
+        </aside>
+        <div class="dash-main">
+          <div class="dash-top"><div><span>Good morning 👋</span><h3>Here's your month.</h3></div><button class="avatar">MM</button></div>
+          <div class="metric-grid">
+            <div class="metric"><span>Income</span><b id="incomeView">₹30,000</b><small>This month</small></div>
+            <div class="metric"><span>Spent</span><b id="spentView">₹15,320</b><small>51% of income</small></div>
+            <div class="metric"><span>Saved</span><b id="savedView">₹6,000</b><small>20% of income</small></div>
+            <div class="metric highlight"><span>Flexible left</span><b id="leftView">₹8,680</b><small>Until month end</small></div>
+          </div>
+          <div class="dash-columns">
+            <div class="panel"><div class="panel-title"><b>Spending breakdown</b><span>This month</span></div><div class="donut"><div><b>₹15.3k</b><small>spent</small></div></div><div class="legend"><span>Needs <b>₹7,800</b></span><span>Lifestyle <b>₹4,520</b></span><span>Other <b>₹3,000</b></span></div></div>
+            <div class="panel"><div class="panel-title"><b>Quick budget</b><span id="budgetStatus">Healthy</span></div><label>Monthly income <input id="incomeInput" type="number" value="30000" min="0"></label><label>Planned spending <input id="spendInput" type="number" value="15320" min="0"></label><label>Savings goal <input id="saveInput" type="number" value="6000" min="0"></label><button class="btn btn-dark full" id="calculateBtn">Update my plan</button></div>
+          </div>
+          <div class="insight"><span>✦</span><div><b>MoneyMate insight</b><p id="insightText">You have ₹8,680 of flexible money left after your planned spending and savings.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div><div class="eyebrow">START SIMPLE</div><h2>Money clarity should be for everyone.</h2><p>Build your first monthly plan in a few minutes.</p></div>
+      <button class="btn btn-dark btn-large" data-scroll="#dashboard">Create my plan <span>→</span></button>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-dot"></span>MoneyMate</div><p>Simple tools for better everyday money decisions.</p><span>© 2026 MoneyMate</span></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
